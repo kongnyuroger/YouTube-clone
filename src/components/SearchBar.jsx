@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import { Paper, IconButton } from '@mui/material';
-import { Search } from '@mui/icons-material/Search';
+import SearchIcon from '@mui/icons-material/Search';
 
 
 const SearchBar = () => {
@@ -23,8 +23,8 @@ const SearchBar = () => {
         value=''
         onChange={() => {}}
         />
-        <IconButton type='submit' sx={{ p: '20px', color: 'red'}}>
-            
+        <IconButton type='submit' sx={{ p: '10px', color: 'red'}}>
+            <SearchIcon />
         </IconButton>
     </Paper>
   )
